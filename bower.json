@@ -1,0 +1,20 @@
+{
+  "name": "desafioFrontEnd",
+  "description": "This project is a Front End Challenge",
+  "main": "backend/web-server.js",
+  "authors": [
+    "Heloisa Carbone"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

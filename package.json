@@ -1,0 +1,17 @@
+{
+  "name": "desafioFrontEnd",
+  "version": "1.0.0",
+  "description": "This project is a Front End Challenge ",
+  "main": "backend/web-server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Heloisa Carbone",
+  "dependencies": {
+    "body-parser": "1.13.1",
+    "express": "4.13.0"
+  }
+}

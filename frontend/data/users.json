@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "Edjan Souza Santos",
+      "birthdate": "14/05/1988",
+      "gender": "male"
+    },
+    {
+      "name": "Heloisa Carbone",
+      "birthdate": "03/03/1994",
+      "gender": "female"
+    },
+    {
+      "name": "Gabriel Rodrigues",
+      "birthdate": "10/05/1990",
+      "gender": "male"
+    },
+    {
+      "name": "Gisele Senhorini",
+      "birthdate": "21/09/1977",
+      "gender": "female"
+    }
+  ]
+}

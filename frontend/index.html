@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="desafio">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Desafio Front End</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="container-fluid">
+        <div class="row"></div>
+    </header>
+
+    <section class="container-fluid" ng-controller="UsersController">
+        <div class="row">
+            <div class="col-md-2 menu">
+                <button type="button" class="btn btn-sort" ng-click="sortBy('name')">ORDENAR NOME</button>
+                <button type="button" class="btn btn-sort" ng-click="sortBy('birthdate')">ORDENAR NASCIMENTO</button>
+                <button type="button" class="btn btn-sort" ng-click="changeFilterGender('male')">FILTRO HOMENS</button>
+                <button type="button" class="btn btn-sort" ng-click="changeFilterGender('female')">FILTRO MULHERES</button>
+            </div>
+            <div class="col-md-10">
+                <input type="text" placeholder="O QUE VOCÊ DESEJA BUSCAR...."/>
+                <div class="row header-table">
+                    <div class="col-md-7">
+                        NOME
+                    </div>
+                    <div class="col-md-3">
+                        DT NASCIMENTO
+                    </div>
+                    <div class="col-md-2">
+                        SEXO
+                    </div>
+                </div>
+
+                <div class="row body-table" ng-repeat="user in users.users | orderBy:sortorder" ng-hide="filtergender!='all' && filtergender!=user.gender">
+                    <div class="col-md-7">
+                        {{user.name}}
+                    </div>
+                    <div class="col-md-3">
+                        {{user.birthdate}}
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa" ng-class="{'fa-mars': user.gender=='male', 'fa-venus': user.gender=='female'}" aria-hidden="true"></i>                   </div>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-add-user" type="button" ng-click="">+ ADICIONAR</button>
+                </div>
+
+                <div class="row add-user">
+                    <label class="row">NOME</label>
+                    <input class="row" type="text"/>
+                    <div class="row">
+                        <label class="col-md-3">DT NASCIMENTO</label>
+                        <label class="col-md-3">SEXO</label>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3 dropdown">
+                            <button class="btn btn-drop-gender" type="button" data-toggle="dropdown"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            <ul class="dropdown-menu">
+                                <li>FEMININO</li>
+                                <li>MASCULINO</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="js/controller/users-controller.js"></script>
+    <script src="/js/services/users-data.js"></script>
+    <script src="js/general.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</body>
+</html>

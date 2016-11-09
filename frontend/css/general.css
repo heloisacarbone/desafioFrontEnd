@@ -1,0 +1,105 @@
+
+header .row {
+    background-color: #020134;
+    height: 10vh;
+}
+
+section .row .menu {
+    background-color: #DEDEDF;
+    height: 90vh;
+    padding-top: 5vh;
+}
+
+.btn-sort {
+    background-color: white;
+    color: #020134;
+    font-weight: bold;
+    padding: 1vh;
+    width: 14.5vw;
+    margin: 1vh 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-sort:focus  {
+    background-color: #020134;
+    color: white;
+}
+
+section .row .col-md-10 {
+    padding-top: 5vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+
+.col-md-10 input {
+    width: 100%;
+    border: 0;
+    background-color: #FAF9F9;
+    padding: 1vh;
+    margin: 1vh 0;
+}
+
+div .add-user {
+    margin-top: 3vh;
+    padding-top:0;
+    padding-bottom: 3vh;
+    background-color: #FAF9F9;
+    color: #494949;
+}
+
+.add-user label {
+    margin: 3vh 1vw;
+}
+
+.add-user input {
+    background-color: white;
+    width: 97%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+}
+
+div .users {
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.row .header-table, .row .body-table {
+    background-color: #FAF9F9;
+    color: #494949;
+    font-weight: bold;
+    padding: 1vh;
+    margin: 1vh 0;
+}
+
+.row .body-table {
+    font-weight: normal;
+}
+
+.row .btn-add-user {
+    float: right;
+    margin-right: 1vw;
+    background-color: #020134;
+    color: white;
+    font-weight: bold;
+    padding: 1.5vh 1vw;
+}
+
+.btn-drop-gender {
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-drop-gender i {
+    float: right;
+
+}
+
+.dropdown li {
+    padding: 0.5vh;
+    font-weight: bold;
+}
