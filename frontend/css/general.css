@@ -86,6 +86,11 @@ div .users {
     color: white;
     font-weight: bold;
     padding: 1.5vh 1vw;
+    width: 15vw;
+}
+
+.btn-add-cancel {
+    background-color: #d43f3a;
 }
 
 .btn-drop-gender {
