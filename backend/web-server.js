@@ -16,5 +16,6 @@ app.use(express.static(rootPath + '/frontend'));
 
 app.get('/data', users.get);
 
-app.listen(8080);
+var port = (process.env.PORT || 8080);
+app.listen(port);
 console.log('listen on 8080')
