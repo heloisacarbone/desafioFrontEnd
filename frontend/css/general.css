@@ -89,22 +89,51 @@ div .users {
     width: 15vw;
 }
 
-.btn-add-cancel {
-    background-color: #d43f3a;
-}
-
-.btn-drop-gender {
-    background-color: white;
-    width: 80%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.btn-drop-gender i {
-    float: right;
-
-}
-
 .dropdown li {
     padding: 0.5vh;
     font-weight: bold;
+}
+
+#formuser {
+    background-color: #FAF9F9;
+    padding: 2vh 1vw;
+    margin-text: 2vh;
+}
+
+#formuser input {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#formuser #date {
+    background: url(../images/calendar.ico) no-repeat 99.5%;
+    background-size: 25px 25px;
+    background-position: right;
+    background-color: white;
+}
+
+#formuser #gender {
+    display: block;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border: 0;
+    border-radius: 1vh;
+    margin-top: 1vh;
+    padding: 1vh;
+}
+
+#formuser .btn {
+    background-color: #020134;
+    color: white;
+    font-weight: bold;
+    padding: 1.5vh 1vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+#formuser .cancel {
+    background-color: red;
 }

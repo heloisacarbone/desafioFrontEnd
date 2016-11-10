@@ -6,9 +6,17 @@
 desafio.controller('UsersController',
     function UsersController($scope, usersData) {
 
+
         usersData.getUsers().success(function (users) {
+            console.log(users);
             $scope.users = users;
         });
+
+        $scope.changeUsersData = function() {
+            console.log($scope.newEntry)
+            $scope.users.users.push($scope.newEntry);
+            $scope.newEntry = "";
+        }
 
         $scope.sortorder = "name";
 
