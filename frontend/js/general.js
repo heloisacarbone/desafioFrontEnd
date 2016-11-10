@@ -23,3 +23,18 @@ function cleanFields() {
     $('#date').click();
     $("#gender").val('');
 }
+
+$("#searchbar").on("keyup", function() {
+    var value = $(this).val();
+
+    $(".body-table").each(function() {
+
+        if ($(this).text().indexOf(value) != -1) {
+            $(this).show();
+        }
+        else {
+            $(this).hide();
+        }
+
+    });
+});

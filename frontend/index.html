@@ -29,7 +29,7 @@
             <button type="button" class="btn btn-sort" ng-click="changeFilterGender('female')">FILTRO MULHERES</button>
         </div>
         <div class="col-md-10">
-            <input type="text" placeholder="O QUE VOCÊ DESEJA BUSCAR...."/>
+            <input id="searchbar" type="text" placeholder="O QUE VOCÊ DESEJA BUSCAR...."/>
             <div class="row header-table">
                 <div class="col-md-7">
                     NOME
@@ -63,7 +63,7 @@
             </div>
 
             <!-- Colocar form - olhar angularjs forms validation -->
-            <form id="formuser" class="collapse" ng-submit="changeUsersData()">
+            <form id="formuser" class="collapse" ng-submit="changeUsersData()" name="form-user">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="row">
@@ -97,7 +97,7 @@
                                 <button class="btn cancel" onclick="cleanFields()" data-toggle="collapse" data-target="#formuser">CANCEL</button>
                             </div>
                             <div class="col-xs-2">
-                                <button class="btn" type="submit" data-toggle="collapse" data-target="#formuser">SAVE</button>
+                                <button class="btn" type="submit" data-toggle="collapse" data-target="#formuser" disabled="{{ form-user.$invalid }}">SAVE</button>
                             </div>
                         </div>
                     </div>
