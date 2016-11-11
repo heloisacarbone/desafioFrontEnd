@@ -21,6 +21,7 @@ section .row .menu {
     margin-right: auto;
 }
 
+.btn-sort.active,
 .btn-sort:focus  {
     background-color: #020134;
     color: white;
@@ -67,8 +68,17 @@ div .users {
     margin-top: 3vh;
 }
 
-.row .header-table, .row .body-table {
+.row .header-table,
+.body-table:nth-child(even) {
     background-color: #FAF9F9;
+}
+
+.body-table:nth-child(odd) {
+    background-color: #fff;
+}
+
+.row .header-table,
+.row .body-table {
     color: #494949;
     font-weight: bold;
     padding: 1vh;
